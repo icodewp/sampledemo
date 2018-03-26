@@ -82,8 +82,8 @@ public class CreateTopicAndPublishMessages {
 		// [END pubsub_publish]
 	}
 
-	public static void main(String... args) throws Exception {
+	/*public static void main(String... args) throws Exception {
 		// createTopic();
 		publishMessages();
-	}
+	}*/
 }
