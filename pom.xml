@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <bigquery.version>v2-rev355-1.22.0</bigquery.version>
+    
     <maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
     <exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
     <maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
@@ -140,27 +140,6 @@
   <artifactId>google-cloud-pubsub</artifactId>
   <version>0.41.0-beta</version>
 </dependency>
-
-<!-- Adds a dependency on a specific version of the Dataflow SDK. -->
-    <dependency>
-      <groupId>com.google.cloud.dataflow</groupId>
-      <artifactId>google-cloud-dataflow-java-sdk-all</artifactId>
-      <version>2.3.0</version>
-    </dependency>
-    
-        <dependency>
-      <groupId>com.google.apis</groupId>
-      <artifactId>google-api-services-bigquery</artifactId>
-      <version>${bigquery.version}</version>
-      <exclusions>
-        <!-- Exclude an old version of guava that is being pulled
-             in by a transitive dependency of google-api-client -->
-        <exclusion>
-          <groupId>com.google.guava</groupId>
-          <artifactId>guava-jdk5</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
   
   <dependency>
         <groupId>org.springframework.boot</groupId>
